@@ -18,9 +18,6 @@ RUN sed -i '/^bind-address*/ s/^/#/' /etc/mysql/my.cnf
 # Install of php5
 RUN apt-get install -q -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" php5 php-pear php5-mysql
 
-# Install of vim
-RUN apt-get install -q -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" vim
-
 # Restart mysql and apache2
 RUN service apache2 restart
 RUN service mysql start && mysql -u root --password= -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '' WITH GRANT OPTION;"
