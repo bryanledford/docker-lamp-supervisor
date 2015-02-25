@@ -18,7 +18,7 @@ It is meant for development only. MySQL is set up with zero security in mind.
     http://docker:5000/ (where docker has been mappted to your docker/boot2docker ip)
 
 #### MySQL via the command line (just hit enter at password prompt): ####
-    mysql -u root -p -h docker
+    mysql -u root -p -h docker -P 5010
 
 
 Credits: https://github.com/Krijger/docker-cookbooks/tree/master/supervisor
