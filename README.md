@@ -19,3 +19,6 @@ It is meant for development only. MySQL is set up with zero security in mind.
 
 #### MySQL via the command line (just hit enter at password prompt): ####
     mysql -u root -p -h docker
+
+
+Credits: https://github.com/Krijger/docker-cookbooks/tree/master/supervisor
